@@ -1,0 +1,12 @@
+version: '3'
+services:
+  node:
+    build: node
+    image: webpack-babel:1.0
+    container_name: webpack
+    tty: true
+    volumes:
+      - ./node/app:/app
+    ports:
+      - "3000:3000"
+    # command: node server.js
