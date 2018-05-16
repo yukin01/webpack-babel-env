@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode=$NODE_ENV",
-    "dev": "webpack-dev-server --mode=$NODE_ENV"
+    "build": "webpack --mode=production --watch",
+    "dev": "webpack-dev-server --mode=development"
   },
   "dependencies": {},
   "devDependencies": {

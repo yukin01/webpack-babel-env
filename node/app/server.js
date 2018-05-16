@@ -7,12 +7,12 @@ const server = http.createServer((request, response) => {
   console.log(path.pathname);
   switch (path.pathname) {
     case '/':
-      const index = fs.readFileSync('./index.html', 'utf-8');
+      const index = fs.readFileSync('./dist/index.html', 'utf-8');
       response.writeHead(200, {'Content-Type': 'text/html'});
       response.write(index);
       response.end();
       break;
-    case '/dist/bundle.js':
+    case '/bundle.js':
       const js = fs.readFileSync('./dist/bundle.js', 'utf-8');
       response.writeHead(200, {'Content-Type': 'text/javascript'});
       response.write(js);
