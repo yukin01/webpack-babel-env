@@ -7,12 +7,12 @@ const change = () => {
   title.textContent = 'Hello world!';
   main.appendChild(title);
 
-  const formula = document.createElement('div');
+  const equation = document.createElement('div');
   const a = 1;
   const b = 2;
   const c = add(a, b);
-  formula.textContent = `${a} + ${b} = ${c}`;
-  main.appendChild(formula);
+  equation.textContent = `${a} + ${b} = ${c}`;
+  main.appendChild(equation);
 };
 
 change();
